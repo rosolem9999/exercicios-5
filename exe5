@@ -1,0 +1,26 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicios5  {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+
+        int resultado;
+
+        if (numero > 0) {
+            resultado = numero * 2;
+            System.out.println("O dobro do número é: " + resultado);
+        } else if (numero < 0) {
+            resultado = numero * 3;
+            System.out.println("O triplo do número é: " + resultado);
+        } else {
+            System.out.println("O número é zero, não há dobro nem triplo.");
+        }
+
+        scanner.close();
+    }
+}
